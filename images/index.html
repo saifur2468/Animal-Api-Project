@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Navbar section Start  -->
+
+    <section class="flex justify-between items-center px-8 py-4">
+
+
+        <div class="flex items-center gap-2">
+            <img src="./logo.webp" alt="logo" class="w-8 h-8">
+            <h1 class="text-xl font-bold">Peddy</h1>
+        </div>
+
+
+        <div>
+            <ul class="flex gap-8 text-gray-600 font-medium">
+                <li class="hover:text-cyan-500 cursor-pointer transition">Home</li>
+                <li class="hover:text-cyan-500 cursor-pointer transition">Shop</li>
+                <li class="hover:text-cyan-500 cursor-pointer transition">Contact</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <i class="fa-regular fa-user text-xl text-gray-600 hover:text-cyan-500 cursor-pointer transition"></i>
+        </div>
+
+    </section>
+
+
+    <!-- Navbar section End  -->
+
+    <!-- Hero  section Start  -->
+    <section>
+        <div>
+            <h1 class="text-center text-xl font-bold mt-2">Bringing Families Together ❤️‍🔥 </h1>
+            <p class="text-center text-xl mt-2  ">Your Path to Adoption Starts Here
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            <button class="border-2 w-[250px] h-[48px] rounded-xl text-xl 
+flex items-center justify-center 
+text-cyan-500 mx-auto mt-5">
+                View More
+            </button>
+
+        </div>
+        <div class="flex justify-center items-center mx-auto">
+            <img src="./pet.webp" alt="">
+        </div>
+    </section>
+
+    <!-- hero section End  -->
+
+
+
+    <!-- Adopt  Your  Best Friend secton  -->
+
+    <section>
+        <h1 class="text-center text-2xl font-bold mt-2">Adopt Your Best Friend
+        </h1>
+        <p class="text-center text-xl  mt-2 w-[700px] h-[10px] mx-auto mt-5">It is a long established fact that a reader
+            will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+            Ipsum is that it has a.</p>
+    </section>
+
+    <!-- catagorty Button section start  -->
+    <section id="Btn-container" class="flex justify-center items-center gap-5 mt-30">
+
+    </section>
+
+
+    <!-- Show All Peets in Home Page  -->
+
+    <section>
+        <div class="flex justify-between">
+            <h1 class="text-xl font-bold">BEST DEAl FOR YOU </h1>
+            <button class="border-2 bg-base-200 text-center rounded-xl">Sort BY PRICE</button>
+        </div>
+
+        <!-- Spinner  -->
+        <section class="flex justify-center my-10">
+            <span id="spinner" class="loading loading-bars loading-xl hidden"></span>
+        </section>
+
+        <!-- Show All Card  -->
+
+        <main class="flex justify-between">
+            <!-- Left Side Section er jono  -->
+            <section id="card-container"
+                class="border-2 w-[850px] mx-auto py-auto gap-5  h-auto grid grid-cols-2 mt-2 rounded-xl">
+
+
+            </section>
+            <!-- Right Side Section -->
+            <section id="right-section"
+                class="border-2 w-[450px] h-[650px] mt-2 rounded-xl p-2 grid grid-cols-2 gap-3 overflow-y-auto">
+            </section>
+
+        </main>
+
+
+    </section>
+
+
+
+    <!-- Modal Section  -->
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container"></div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+
+
+
+
+            <dialog id="adopt_modal" class="modal">
+                <form method="dialog" class="modal-box">
+                    <h3 class="font-bold text-lg">Stat Adopt Count...</h3>
+                    <p id="adopt_countdown" class="py-4 text-center text-2xl font-bold">3</p>
+                    <div class="modal-action">
+                        <button id="adopt_ok_btn" class="btn btn-primary hidden">OK</button>
+                    </div>
+                </form>
+            </dialog>
+
+            <!-- Footer section  -->
+
+            <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+                <nav>
+                    <h6 class="footer-title">Services</h6>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Company</h6>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                    <h6 class="footer-title">Legal</h6>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </nav>
+                <form>
+                    <h6 class="footer-title">Newsletter</h6>
+                    <fieldset class="w-80">
+                        <label>Enter your email address</label>
+                        <div class="join">
+                            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                            <button class="btn btn-primary join-item">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </footer>
+
+
+
+
+
+            <script src="./peet.js"></script>
+</body>
+
+</html>
