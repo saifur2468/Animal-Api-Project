@@ -5,34 +5,34 @@ Peddy is a responsive Pet Adoption Platform where users can browse pets by categ
 
 This platform provides a smooth and interactive user experience for pet lovers who want to explore and adopt pets online.
 
-# Key Features
+Key Features
 
-# Dynamic Category Filtering
+ Dynamic Category Filtering
 Users can filter pets by category (Dog, Cat, etc.) using dynamically generated buttons from API data.
 
-# Pet Details Modal
+ Pet Details Modal
 Each pet has a detailed view with breed, gender, date of birth, and image displayed in a modal.
 
- # API Integration
+  API Integration
 Fetches pet data from a live REST API using fetch().
 
-# Adopt Interaction
+ Adopt Interaction
 Interactive adopt button with user feedback and smooth UI experience.
 
-# Technologies Used
+ Technologies Used
 
-# HTML5
+ HTML5
 
-# Tailwind CSS
+ Tailwind CSS
 
-# JavaScript (ES6)
+ JavaScript (ES6)
 
-# REST API
+ REST API
 
-#  ES6 Features Used
+  ES6 Features Used
 Array Methods (map(), forEach(), find()) etc 
 
-# Live Link:
+ Live Link:
 
 
 📂 GitHub Repository
