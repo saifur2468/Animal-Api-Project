@@ -86,7 +86,7 @@ const displayCards = (pets) => {
   if (!pets || pets.length === 0) {
     cardContainer.innerHTML = `
       <div class="col-span-full flex flex-col items-center text-center  p-10 rounded-xl">
-        <img src="./error.webp" alt="">
+        <img src="./images/error.webp"" alt="">
         <p class="text-red-600">
           Please try another category.
         </p>
